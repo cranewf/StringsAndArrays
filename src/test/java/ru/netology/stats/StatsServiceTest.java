@@ -34,8 +34,8 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sellArray = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expectedMaxSell = 8;
-        long actualMaxSell = service.getMaxSell(sellArray);
+        int expectedMaxSell = 8;
+        int actualMaxSell = service.getMaxSell(sellArray);
 
         Assertions.assertEquals(expectedMaxSell, actualMaxSell);
     }
@@ -45,8 +45,8 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sellArray = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expectedMinSell = 9;
-        long actualMinSell = service.getMinSell(sellArray);
+        int expectedMinSell = 9;
+        int actualMinSell = service.getMinSell(sellArray);
 
         Assertions.assertEquals(expectedMinSell,actualMinSell);
     }
