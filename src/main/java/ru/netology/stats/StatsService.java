@@ -42,8 +42,8 @@ public class StatsService {
         return minSell + 1;
     }
 
-    public long getMinAverageSell(long[] sellArray) {
-        long minAverageSell = 0;
+    public int getMinAverageSell(long[] sellArray) {
+        int minAverageSell = 0;
         long average = getAverageSell(sellArray);
         for (int i = 0; i < sellArray.length; i++) {
             if (sellArray[i] < average) {
@@ -53,8 +53,8 @@ public class StatsService {
         return minAverageSell;
     }
 
-    public long getMaxAverageSell(long[] sellArray) {
-        long maxAverageSell = 0;
+    public int getMaxAverageSell(long[] sellArray) {
+        int maxAverageSell = 0;
         long average = getAverageSell(sellArray);
         for (int i = 0; i < sellArray.length; i++) {
             if (sellArray[i] > average) {

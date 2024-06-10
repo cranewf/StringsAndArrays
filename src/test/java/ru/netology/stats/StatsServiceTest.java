@@ -56,8 +56,8 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sellArray = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expectedMinAverageSell = 5;
-        long actualMinAverageSell = service.getMinAverageSell(sellArray);
+        int expectedMinAverageSell = 5;
+        int actualMinAverageSell = service.getMinAverageSell(sellArray);
 
         Assertions.assertEquals(expectedMinAverageSell,actualMinAverageSell);
     }
@@ -67,8 +67,8 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sellArray = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expectedMaxAverageSell = 5;
-        long actualMaxAverageSell = service.getMaxAverageSell(sellArray);
+        int expectedMaxAverageSell = 5;
+        int actualMaxAverageSell = service.getMaxAverageSell(sellArray);
 
         Assertions.assertEquals(expectedMaxAverageSell, actualMaxAverageSell);
     }
